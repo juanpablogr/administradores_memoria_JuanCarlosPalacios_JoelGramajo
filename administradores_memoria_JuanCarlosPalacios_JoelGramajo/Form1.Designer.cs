@@ -35,8 +35,8 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,6 +71,7 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.button3.TabIndex = 2;
             this.button3.Text = "ASIGNACIÓN DEL PRIMER AJUSTE";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -81,6 +82,7 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.button4.TabIndex = 3;
             this.button4.Text = "ASIGNACIÓN DEL SEGUNDO AJUSTE";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
@@ -104,6 +106,15 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.label2.Text = "primeras generaciones";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(367, 461);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(175, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Juan Carlos Palacios - Joel Gramajo";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::administradores_memoria_JuanCarlosPalacios_JoelGramajo.Properties.Resources.logo_meso;
@@ -114,15 +125,6 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(367, 461);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Juan Carlos Palacios - Joel Gramajo";
             // 
             // Form1
             // 

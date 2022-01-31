@@ -28,5 +28,15 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             particiones_fijas fpf = new particiones_fijas();
             fpf.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

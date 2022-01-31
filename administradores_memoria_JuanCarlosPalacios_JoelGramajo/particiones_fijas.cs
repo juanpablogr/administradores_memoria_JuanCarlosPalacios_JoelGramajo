@@ -16,5 +16,10 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
         {
             InitializeComponent();
         }
+
+        private void particiones_fijas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
