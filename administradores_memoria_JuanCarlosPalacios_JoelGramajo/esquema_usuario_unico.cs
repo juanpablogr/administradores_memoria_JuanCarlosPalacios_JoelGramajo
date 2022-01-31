@@ -51,12 +51,12 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             5977,
             6457
         };
+        
+        string main_dir = "C:\\Users\\juanp\\Documents\\codigos cpp";
 
         int peso_so;
         int job_index = 1;
         bool busy = false;
-
-        string main_dir = "C:\\Users\\juanp\\Documents\\codigos cpp";
 
         public esquema_usuario_unico()
         {
@@ -81,7 +81,7 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             string cpp_code = System.IO.File.ReadAllText(cpp_path);
 
             textBox1.Text = cpp_code.Replace(Convert.ToString((char)13) + Convert.ToString((char)10), Convert.ToString((char)10)).Replace(Convert.ToString((char)10), Convert.ToString((char)13) + Convert.ToString((char)10)); // 13, 10 => 10 and 10 => 13, 10
-            textBox2.Text = assembler_code.Replace(Convert.ToString((char)13) + Convert.ToString((char)10), Convert.ToString((char)10)).Replace(Convert.ToString((char)10), Convert.ToString((char)13) + Convert.ToString((char)10)); ;
+            textBox2.Text = assembler_code.Replace(Convert.ToString((char)13) + Convert.ToString((char)10), Convert.ToString((char)10)).Replace(Convert.ToString((char)10), Convert.ToString((char)13) + Convert.ToString((char)10));
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
