@@ -80,8 +80,12 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             string assembler_code = System.IO.File.ReadAllText(assembler_path);
             string cpp_code = System.IO.File.ReadAllText(cpp_path);
 
-            textBox1.Text = cpp_code.Replace(Convert.ToString((char)13) + Convert.ToString((char)10), Convert.ToString((char)10)).Replace(Convert.ToString((char)10), Convert.ToString((char)13) + Convert.ToString((char)10)); // 13, 10 => 10 and 10 => 13, 10
-            textBox2.Text = assembler_code.Replace(Convert.ToString((char)13) + Convert.ToString((char)10), Convert.ToString((char)10)).Replace(Convert.ToString((char)10), Convert.ToString((char)13) + Convert.ToString((char)10));
+            textBox1.Text = cpp_code.Replace(Convert.ToString((char)13) + Convert.ToString((char)10), 
+            Convert.ToString((char)10)).Replace(Convert.ToString((char)10), Convert.ToString((char)13) 
+            + Convert.ToString((char)10)); // 13, 10 => 10 and 10 => 13, 10
+            textBox2.Text = assembler_code.Replace(Convert.ToString((char)13) + Convert.ToString((char)10), 
+            Convert.ToString((char)10)).Replace(Convert.ToString((char)10), Convert.ToString((char)13) 
+            + Convert.ToString((char)10));
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
@@ -128,7 +132,8 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             }
             catch
             {
-                MessageBox.Show("Parámetros de la máquina incorrectos", "ERROR 001", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Parámetros de la máquina incorrectos", "ERROR 001"
+                , MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -176,7 +181,8 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
         {
             if (listBox1.SelectedIndex != -1)
             {
-                listBox2.Items.Add("Proceso asociado al script " + (char)(65+listBox1.SelectedIndex) + " con el ID: " + job_index);
+                listBox2.Items.Add("Proceso asociado al script " + (char)(65+listBox1.SelectedIndex) 
+                + " con el ID: " + job_index);
                 AddRegister("Proceso con ID " + job_index + " agregado");
                 job_index++;
 
