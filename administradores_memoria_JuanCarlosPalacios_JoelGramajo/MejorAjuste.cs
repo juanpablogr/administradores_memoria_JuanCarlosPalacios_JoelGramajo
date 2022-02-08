@@ -103,13 +103,15 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
                     }
                     else // se queda
                     {
-                        AddRegister("Proceso " + ListaProcesos[pidx].Id + " mayor que cualquier bloque, en espera");
+                        AddRegister("Proceso " + ListaProcesos[pidx].Id + 
+                        " mayor que cualquier bloque, en espera");
                         ListaProcesos[pidx].PonerEnEspera();
                     }
                 }
                 else // no cambia
                 {
-                    AddRegister("Proceso " + ListaProcesos[pidx].Id + " mayor que el tamaño de la RAM");
+                    AddRegister("Proceso " + ListaProcesos[pidx].Id +
+                    " mayor que el tamaño de la RAM");
                     ListaProcesos[pidx].PonerAlertaOverflow();
                 }
             }
@@ -126,7 +128,8 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
 
         void ShowError(string desc, string head)
         {
-            MessageBox.Show(desc, head, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(desc, head, MessageBoxButtons.OK, 
+            MessageBoxIcon.Error);
         }
 
         public MejorAjuste()
@@ -147,7 +150,8 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
                 groupBox3.Enabled = false;
                 groupBox1.Enabled = true;
 
-                AddProcess2ListAndTryAlloc(new Proceso("S.O.", Convert.ToInt32(textBox3.Text) * trackBar2.Value / 100));
+                AddProcess2ListAndTryAlloc(new Proceso("S.O.", 
+                Convert.ToInt32(textBox3.Text) * trackBar2.Value / 100));
 
                 labelMachineState.BackColor = Color.ForestGreen;
                 labelMachineState.Text = "Ejecutandose";
@@ -162,7 +166,8 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
         {
             try
             {
-                AddProcess2ListAndTryAlloc(new Proceso(textBox1.Text, Convert.ToInt32(textBox2.Text)));
+                AddProcess2ListAndTryAlloc(new Proceso(textBox1.Text, 
+                Convert.ToInt32(textBox2.Text)));
                 textBox1.Text = "";
                 textBox2.Text = "";
             }
@@ -182,7 +187,8 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             if (dataGridView2.CurrentRow.Index > 0)
             {
                 MemoryBlocks[dataGridView2.CurrentRow.Index].ReleaseBlock();
-                AddRegister("Bloque " + dataGridView2.CurrentRow.Index + " liberado");
+                AddRegister("Bloque " + dataGridView2.CurrentRow.Index + 
+                " liberado");
                 MergeAdjacentBlocks();
                 TryAllocateProcesses();
                 RefreshGridViews();
