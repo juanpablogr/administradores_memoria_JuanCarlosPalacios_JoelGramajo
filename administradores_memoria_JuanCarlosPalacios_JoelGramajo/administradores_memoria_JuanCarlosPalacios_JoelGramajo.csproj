@@ -58,12 +58,26 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MejorAjuste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MejorAjuste.Designer.cs">
+      <DependentUpon>MejorAjuste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bloque.cs" />
     <Compile Include="particiones_fijas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="particiones_fijas.Designer.cs">
       <DependentUpon>particiones_fijas.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrimerAjuste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrimerAjuste.Designer.cs">
+      <DependentUpon>PrimerAjuste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proceso.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="esquema_usuario_unico.resx">
@@ -72,8 +86,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MejorAjuste.resx">
+      <DependentUpon>MejorAjuste.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="particiones_fijas.resx">
       <DependentUpon>particiones_fijas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrimerAjuste.resx">
+      <DependentUpon>PrimerAjuste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

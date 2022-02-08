@@ -31,12 +31,14 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Pronto veras algo legendario aquí. Nuestro equipo trabaja en ello...", "Gracias por tu visita", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            PrimerAjuste fpa = new PrimerAjuste();
+            fpa.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Pronto veras algo legendario aquí. Nuestro equipo trabaja en ello...", "Gracias por tu visita", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MejorAjuste fma = new MejorAjuste();
+            fma.ShowDialog();
         }
     }
 }

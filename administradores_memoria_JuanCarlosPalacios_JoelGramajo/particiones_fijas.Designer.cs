@@ -30,6 +30,7 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
         private void InitializeComponent()
         {
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.labelMachineState = new System.Windows.Forms.Label();
@@ -112,7 +113,6 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
@@ -156,6 +156,15 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Estado de la máquina";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Enabled = false;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(10, 345);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(294, 28);
+            this.comboBox1.TabIndex = 9;
             // 
             // label7
             // 
@@ -1081,15 +1090,6 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.listBox2.Size = new System.Drawing.Size(390, 424);
             this.listBox2.TabIndex = 0;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Enabled = false;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(10, 345);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(294, 28);
-            this.comboBox1.TabIndex = 9;
             // 
             // particiones_fijas
             // 

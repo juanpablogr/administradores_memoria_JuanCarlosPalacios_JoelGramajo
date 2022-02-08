@@ -103,7 +103,7 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(555, 731);
+            this.label3.Location = new System.Drawing.Point(555, 747);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(263, 20);
@@ -124,8 +124,9 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(831, 760);
+            this.ClientSize = new System.Drawing.Size(831, 787);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

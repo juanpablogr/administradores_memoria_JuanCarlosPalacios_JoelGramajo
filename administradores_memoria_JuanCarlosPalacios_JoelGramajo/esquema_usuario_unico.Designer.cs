@@ -229,6 +229,8 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.label18.TabIndex = 9;
             this.label18.Text = "0";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label18.TextChanged += new System.EventHandler(this.label18_TextChanged);
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label17
             // 

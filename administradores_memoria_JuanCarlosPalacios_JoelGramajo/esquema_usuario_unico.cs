@@ -230,5 +230,15 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
                 MessageBox.Show("No hay otro proceso ademas del S.O.", "ERROR 003", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
