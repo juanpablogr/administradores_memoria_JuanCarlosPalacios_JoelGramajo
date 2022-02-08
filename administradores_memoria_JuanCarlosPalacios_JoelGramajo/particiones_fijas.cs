@@ -118,8 +118,12 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             string assembler_code = System.IO.File.ReadAllText(assembler_path);
             string cpp_code = System.IO.File.ReadAllText(cpp_path);
 
-            textBox1.Text = cpp_code.Replace(Convert.ToString((char)13) + Convert.ToString((char)10), Convert.ToString((char)10)).Replace(Convert.ToString((char)10), Convert.ToString((char)13) + Convert.ToString((char)10)); // 13, 10 => 10 and 10 => 13, 10
-            textBox2.Text = assembler_code.Replace(Convert.ToString((char)13) + Convert.ToString((char)10), Convert.ToString((char)10)).Replace(Convert.ToString((char)10), Convert.ToString((char)13) + Convert.ToString((char)10));
+            textBox1.Text = cpp_code.Replace(Convert.ToString((char)13) + Convert.ToString((char)10), 
+            Convert.ToString((char)10)).Replace(Convert.ToString((char)10), Convert.ToString((char)13) 
+            + Convert.ToString((char)10)); // 13, 10 => 10 and 10 => 13, 10
+            textBox2.Text = assembler_code.Replace(Convert.ToString((char)13) + Convert.ToString((char)10), 
+            Convert.ToString((char)10)).Replace(Convert.ToString((char)10), Convert.ToString((char)13) + 
+            Convert.ToString((char)10));
         }
 
         void LoadJobToPartition(int idx, int size, string process_letter, string identificador)
@@ -227,7 +231,9 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
                 }
                 else
                 {
-                    textBox5.Text = "El proceso " + listBox2.Items[job_idx] + " ha revasado el límite de capacidad de la partición más grande! " + peso_actual_job + " KB / " + max_part_size + " KB";
+                    textBox5.Text = "El proceso " + listBox2.Items[job_idx] 
+                    + " ha revasado el límite de capacidad de la partición más grande! " 
+                    + peso_actual_job + " KB / " + max_part_size + " KB";
                     AddRegister("Imposible alojar " + listBox2.Items[job_idx] + " en memoria");
                 }
             }
@@ -307,7 +313,8 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
                 }
                 else
                 {
-                    MessageBox.Show("No hay un proceso asignado a la partición seleccionada!", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No hay un proceso asignado a la partición seleccionada!", "INFO"
+                    , MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
