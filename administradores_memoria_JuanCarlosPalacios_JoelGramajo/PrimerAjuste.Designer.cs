@@ -42,26 +42,26 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -184,6 +184,7 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             // listBox3
             // 
             this.listBox3.FormattingEnabled = true;
+            this.listBox3.HorizontalScrollbar = true;
             this.listBox3.ItemHeight = 20;
             this.listBox3.Location = new System.Drawing.Point(7, 68);
             this.listBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -220,33 +221,23 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Administración de procesos";
             // 
-            // button1
+            // label7
             // 
-            this.button1.Location = new System.Drawing.Point(11, 97);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(414, 38);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Agregar proceso a la lista";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(395, 64);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(30, 20);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "KB";
             // 
-            // label1
+            // textBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 20);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Nombre del proceso:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(171, 24);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 26);
-            this.textBox1.TabIndex = 9;
+            this.textBox2.Location = new System.Drawing.Point(171, 60);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(219, 26);
+            this.textBox2.TabIndex = 11;
             // 
             // label2
             // 
@@ -257,13 +248,33 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.label2.TabIndex = 10;
             this.label2.Text = "Tamaño del proceso:";
             // 
-            // textBox2
+            // textBox1
             // 
-            this.textBox2.Location = new System.Drawing.Point(171, 60);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(219, 26);
-            this.textBox2.TabIndex = 11;
+            this.textBox1.Location = new System.Drawing.Point(171, 24);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(254, 26);
+            this.textBox1.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 20);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Nombre del proceso:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(11, 97);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(414, 38);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Agregar proceso a la lista";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox2
             // 
@@ -279,28 +290,16 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Memoria y lista de procesos";
             // 
-            // dataGridView1
+            // button3
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 79);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(571, 481);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 48);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Lista de procesos";
+            this.button3.Location = new System.Drawing.Point(601, 522);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(602, 38);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "Liberar bloque seleccionado";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label4
             // 
@@ -324,6 +323,29 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.dataGridView2.Size = new System.Drawing.Size(603, 435);
             this.dataGridView2.TabIndex = 2;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(11, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 20);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Lista de procesos";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(11, 79);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(571, 481);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::administradores_memoria_JuanCarlosPalacios_JoelGramajo.Properties.Resources.logo_meso;
@@ -333,27 +355,6 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(395, 64);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(30, 20);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "KB";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(601, 522);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(602, 38);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Liberar bloque seleccionado";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // PrimerAjuste
             // 
@@ -378,8 +379,8 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

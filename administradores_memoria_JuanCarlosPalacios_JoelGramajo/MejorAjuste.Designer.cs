@@ -184,6 +184,7 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             // listBox3
             // 
             this.listBox3.FormattingEnabled = true;
+            this.listBox3.HorizontalScrollbar = true;
             this.listBox3.ItemHeight = 20;
             this.listBox3.Location = new System.Drawing.Point(7, 68);
             this.listBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
