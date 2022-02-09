@@ -43,7 +43,7 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(130, 261);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(133, 77);
             this.button1.TabIndex = 0;
@@ -54,7 +54,7 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(284, 261);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(133, 77);
             this.button2.TabIndex = 1;
@@ -65,7 +65,7 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(130, 372);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(133, 77);
             this.button3.TabIndex = 2;
@@ -76,7 +76,7 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(284, 372);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(133, 77);
             this.button4.TabIndex = 3;
@@ -119,7 +119,7 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             // 
             this.pictureBox1.Image = global::administradores_memoria_JuanCarlosPalacios_JoelGramajo.Properties.Resources.logo_meso;
             this.pictureBox1.Location = new System.Drawing.Point(189, 23);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(169, 151);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -141,7 +141,7 @@ namespace administradores_memoria_JuanCarlosPalacios_JoelGramajo
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
